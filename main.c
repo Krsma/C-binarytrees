@@ -46,6 +46,22 @@ void addToTreeB(node* root,int data)
 
 
 }
+void printBinaryTree(node* root)
+{
+    if (! root->left == NULL)
+    {
+        printBinaryTree(root->left);
+    }
+
+    printf("%i ", root->data);  //printing self
+
+    if (! root->right == NULL)
+    {
+        printBinaryTree(root->right);
+    }
+
+
+}
 int main()
 {
     int i,k,j;
@@ -61,7 +77,7 @@ int main()
         scanf("%i", &j);
         addToTreeB(root,j);
     }
-
-    printf("Hello world!\n");
+    printBinaryTree(root);
+    //printf("Hello world!\n");
     return 0;
 }
