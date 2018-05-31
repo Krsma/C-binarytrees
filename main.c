@@ -9,13 +9,13 @@ typedef struct node
 
 node* initNode(int data)
 {
-    node* node;
-    //node* node  = (node*)malloc(sizeof(node));
-    node->data = data;
-    node->left = NULL;
-    node->right = NULL;
+    //node* node;
+    node* cvor  = (node*) malloc(sizeof(struct node));
+    cvor->data = data;
+    cvor->left = NULL;
+    cvor->right = NULL;
 
-    return node;
+    return cvor;
 
 }
 void addToTreeB(node* root,int data)
@@ -50,11 +50,14 @@ int main()
 {
     int i,k,j;
     node* root;
+    printf("give the value of root node");
     scanf("%i", &k);
     root = initNode(k);
+    printf("give number of wanted nodes");
     scanf("%i", &k);
-    for (i = 0; i<= k; i++)
+    for (i = 0; i < k; i++)
     {
+        printf("give the value node");
         scanf("%i", &j);
         addToTreeB(root,j);
     }

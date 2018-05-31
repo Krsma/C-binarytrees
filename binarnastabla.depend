@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1527758133 source:c:\users\krsmanovic\desktop\c binarna stabla\binarnastabla\c-binarytrees\main.c
+	<stdio.h>
+	<stdlib.h>
+
